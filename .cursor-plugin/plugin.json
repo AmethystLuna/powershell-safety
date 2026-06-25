@@ -1,0 +1,24 @@
+{
+  "name": "powershell-safety",
+  "displayName": "PowerShell Safety",
+  "description": "PowerShell safety rules — file encoding pitfalls (BOM, UTF-16 LE vs UTF-8), native executable piping, quoting, and destructive command patterns.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Amethyst Luna",
+    "url": "https://github.com/AmethystLuna"
+  },
+  "homepage": "https://github.com/AmethystLuna/powershell-safety",
+  "repository": "https://github.com/AmethystLuna/powershell-safety",
+  "license": "MIT",
+  "keywords": [
+    "powershell",
+    "windows",
+    "encoding",
+    "utf8",
+    "bom",
+    "shell",
+    "safety",
+    "quoting"
+  ],
+  "skills": "./skills/"
+}

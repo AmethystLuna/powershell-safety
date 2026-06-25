@@ -1,0 +1,4 @@
+* text=auto
+*.md text=auto
+*.json text=auto
+*.ps1 text eol=crlf

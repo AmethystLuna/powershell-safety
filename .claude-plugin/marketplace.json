@@ -1,0 +1,15 @@
+{
+  "name": "powershell-safety-dev",
+  "description": "Development marketplace for PowerShell Safety plugin",
+  "owner": {
+    "name": "Amethyst Luna"
+  },
+  "plugins": [
+    {
+      "name": "powershell-safety",
+      "description": "PowerShell safety rules — file encoding pitfalls, BOM handling, quoting, and command safety for Windows terminals.",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}
