@@ -1,6 +1,6 @@
 # PowerShell Safety
 
-> PowerShell safety rules for AI coding agents — encoding pitfalls, BOM handling, quoting, and destructive command patterns.
+> PowerShell safety rules for AI coding agents — garbled text detection, encoding pitfalls, BOM handling, quoting, and destructive command patterns.
 
 **Cross-platform** — works with Claude Code, Codex CLI, Cursor, Kimi CLI, OpenCode, and ZCode. Built on the [Agent Skills](https://agentskills.io) open standard.
 
@@ -14,7 +14,7 @@ AI coding agents generate PowerShell commands every day on Windows. The most com
 
 | Skill | Purpose |
 |-------|---------|
-| `powershell-safety` | File encoding iron rules, BOM handling, quoting, native executable piping, destructive command safety |
+| `powershell-safety` | Garbled text detection, file encoding iron rules, BOM handling, quoting, native executable piping, destructive command safety |
 
 ### Deep Reference
 
@@ -48,8 +48,8 @@ if ($p.ExitCode -ne 0) { throw "Build failed" }
 The plugin auto-injects a capability notification at session start. Skills are loaded on demand:
 
 - `Skill("powershell-safety")` — load the core safety rules
-- Domain skills activate automatically when their `Use when` description matches your task
-- The `encoding-guide.md` reference loads when writing source files or debugging garbled output
+- The skill activates automatically when garbled text, mojibake, or encoding artifacts appear in shell output or file content
+- The `encoding-guide.md` reference loads when writing source files or diagnosing encoding issues
 
 ## Installation
 

@@ -14,7 +14,7 @@ Or pin a specific version:
 
 ```json
 {
-  "plugin": ["powershell-safety@git+https://github.com/AmethystLuna/powershell-safety.git#v0.1.0"]
+  "plugin": ["powershell-safety@git+https://github.com/AmethystLuna/powershell-safety.git#v0.2.0"]
 }
 ```
 

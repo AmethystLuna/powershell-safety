@@ -8,7 +8,7 @@
     {
       "name": "powershell-safety",
       "description": "PowerShell safety rules — file encoding pitfalls, BOM handling, quoting, and command safety for Windows terminals.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./"
     }
   ]

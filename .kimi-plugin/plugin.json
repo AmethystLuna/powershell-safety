@@ -1,6 +1,6 @@
 {
   "name": "powershell-safety",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PowerShell safety rules — file encoding pitfalls (BOM, UTF-16 LE vs UTF-8), native executable piping, quoting, and destructive command patterns.",
   "author": {
     "name": "Amethyst Luna",
