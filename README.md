@@ -45,10 +45,10 @@ if ($p.ExitCode -ne 0) { throw "Build failed" }
 
 ## How Skills Load
 
-The plugin auto-injects a capability notification at session start. Skills are loaded on demand:
+The plugin uses a **SessionStart hook** to inject encoding trigger symptoms and the **1% Rule** into every session. This means the model is proactively reminded — not waiting to passively remember the skill exists.
 
-- `Skill("powershell-safety")` — load the core safety rules
-- The skill activates automatically when garbled text, mojibake, or encoding artifacts appear in shell output or file content
+- At session start, a `<EXTREMELY_IMPORTANT>` block is injected with garbled-text detection symptoms, the 1% Rule ("if any encoding symptom is present, you MUST load the skill"), and Red Flags that intercept common encoding rationalizations ("it looks fine", "I'll just use Set-Content", "this is a quick one-liner")
+- `Skill("powershell-safety")` — load the core safety rules and symptom→fix cheat sheet
 - The `encoding-guide.md` reference loads when writing source files or diagnosing encoding issues
 
 ## Installation
