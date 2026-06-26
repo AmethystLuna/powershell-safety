@@ -1,3 +1,7 @@
+[English](README.md)
+
+---
+
 # PowerShell Safety
 
 > AI 编程助手的 PowerShell 安全规则 — 乱码检测、文件编码陷阱、BOM 处理、引号规范、破坏性命令防护。

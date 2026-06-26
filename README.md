@@ -1,3 +1,7 @@
+[中文](README.zh-CN.md)
+
+---
+
 # PowerShell Safety
 
 > PowerShell safety rules for AI coding agents — garbled text detection, encoding pitfalls, BOM handling, quoting, and destructive command patterns.
