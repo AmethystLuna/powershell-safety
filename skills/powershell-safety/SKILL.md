@@ -3,6 +3,10 @@ name: powershell-safety
 description: "Use when you observe garbled characters, mojibake, or encoding artifacts in any shell output, file content, or tool result — BEFORE generating any PowerShell file-write or pipe, load this skill. Also use when writing files via PowerShell consumed by other tools (compilers, git, parsers), or when generating destructive/wide-scope PowerShell commands. NOT needed for read-only commands (grep, git status, dotnet build, markdownlint)."
 ---
 
+<HARD-GATE>
+This skill is mandatory when encoding symptoms are present. The SessionStart hook injects trigger symptoms into every session. If you observe garbled characters, mojibake, BOM errors, or are about to write a file via PowerShell consumed by other tools — you MUST load this skill before generating the command. Encoding corruption is silent and irreversible once written.
+</HARD-GATE>
+
 # PowerShell Safety
 
 ## When This Skill Applies — Garbled Text Detection
